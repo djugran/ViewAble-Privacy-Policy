@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ViewAble – Privacy Policy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #020617;
+        --bg-card: #0b1220;
+        --border-card: #1e293b;
+        --text-main: #e5e7eb;
+        --text-muted: #9ca3af;
+        --accent: #38bdf8;
+        --accent-soft: rgba(56, 189, 248, 0.12);
+        --danger: #f97373;
+        --radius-card: 18px;
+        --radius-pill: 999px;
+        --shadow-card: 0 18px 45px rgba(15, 23, 42, 0.75);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        background: radial-gradient(circle at top, #0f172a 0, #020617 55%, #000 100%);
+        color: var(--text-main);
+        display: flex;
+        justify-content: center;
+        padding: 32px 16px 40px;
+      }
+
+      .page {
+        width: 100%;
+        max-width: 860px;
+      }
+
+      .header {
+        margin-bottom: 20px;
+        text-align: left;
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        border-radius: var(--radius-pill);
+        border: 1px solid rgba(148, 163, 184, 0.55);
+        padding: 3px 10px;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--text-muted);
+        background: rgba(15, 23, 42, 0.8);
+        backdrop-filter: blur(8px);
+      }
+
+      .badge-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 999px;
+        background: #22c55e;
+        box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.25);
+      }
+
+      h1 {
+        margin-top: 10px;
+        font-size: clamp(28px, 4vw, 34px);
+        letter-spacing: -0.03em;
+      }
+
+      .subtitle {
+        margin-top: 6px;
+        max-width: 640px;
+        font-size: 14px;
+        color: var(--text-muted);
+      }
+
+      .meta {
+        margin-top: 10px;
+        font-size: 12px;
+        color: var(--text-muted);
+      }
+
+      .pill-row {
+        margin-top: 14px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .pill {
+        border-radius: var(--radius-pill);
+        border: 1px solid rgba(148, 163, 184, 0.4);
+        padding: 4px 10px;
+        font-size: 11px;
+        color: var(--text-muted);
+        background: rgba(15, 23, 42, 0.75);
+      }
+
+      .pill--accent {
+        border-color: rgba(56, 189, 248, 0.6);
+        color: #f9fafb;
+        background: linear-gradient(135deg, #0ea5e9, #22c55e);
+      }
+
+      .card {
+        margin-top: 18px;
+        background: radial-gradient(circle at top left, #020617, #020617 35%, #020617 100%);
+        border-radius: var(--radius-card);
+        border: 1px solid var(--border-card);
+        box-shadow: var(--shadow-card);
+        padding: 18px 18px 20px;
+      }
+
+      .section {
+        padding: 12px 0;
+        border-top: 1px solid rgba(30, 64, 175, 0.45);
+      }
+
+      .section:first-of-type {
+        border-top: none;
+        padding-top: 0;
+      }
+
+      .section:last-of-type {
+        padding-bottom: 0;
+      }
+
+      h2 {
+        font-size: 18px;
+        margin-bottom: 6px;
+        letter-spacing: -0.02em;
+      }
+
+      h3 {
+        font-size: 14px;
+        margin-bottom: 4px;
+      }
+
+      p {
+        font-size: 13px;
+        line-height: 1.6;
+        color: var(--text-main);
+      }
+
+      .muted {
+        color: var(--text-muted);
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      ul {
+        margin-top: 6px;
+        margin-left: 18px;
+        font-size: 13px;
+        line-height: 1.6;
+        color: var(--text-main);
+      }
+
+      li + li {
+        margin-top: 3px;
+      }
+
+      .tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-top: 4px;
+      }
+
+      .tag {
+        border-radius: 999px;
+        border: 1px solid rgba(148, 163, 184, 0.45);
+        padding: 2px 8px;
+        font-size: 11px;
+        color: var(--text-muted);
+      }
+
+      .alert {
+        margin-top: 10px;
+        border-radius: var(--radius-pill);
+        border: 1px solid rgba(249, 115, 129, 0.7);
+        background: rgba(127, 29, 29, 0.6);
+        color: #fee2e2;
+        padding: 6px 11px;
+        font-size: 11px;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .alert-icon {
+        width: 14px;
+        height: 14px;
+        border-radius: 999px;
+        border: 2px solid #fecaca;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+      }
+
+      .footer {
+        margin-top: 18px;
+        font-size: 11px;
+        color: var(--text-muted);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: space-between;
+      }
+
+      @media (max-width: 640px) {
+        .card {
+          padding: 14px 12px 16px;
+        }
+
+        h1 {
+          font-size: 24px;
+        }
+
+        .subtitle {
+          font-size: 13px;
+        }
+
+        .footer {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          <span>Privacy‑first accessibility helper</span>
+        </div>
+        <h1>ViewAble Privacy Policy</h1>
+        <p class="subtitle">
+          ViewAble simplifies web pages, reads them aloud, and generates summaries and
+          quizzes to support visually impaired, low‑vision, dyslexic, and elderly
+          readers.
+        </p>
+        <p class="meta">
+          Last updated: <strong>May 28, 2026</strong>
+        </p>
+        <div class="pill-row">
+          <span class="pill pill--accent">Chrome extension</span>
+          <span class="pill">Accessibility &amp; reading support</span>
+          <span class="pill">No ads</span>
+          <span class="pill">No personal identity data</span>
+        </div>
+      </header>
+
+      <section class="card">
+        <section class="section">
+          <h2>1. Introduction</h2>
+          <p>
+            ViewAble (“the Extension”) is a Chrome browser extension that simplifies
+            web pages, provides read‑aloud, and generates summaries and quizzes to
+            make online reading more accessible.
+          </p>
+          <p class="muted" style="margin-top: 4px;">
+            This Privacy Policy explains what data we process, how we use it, and how
+            we protect it when you use ViewAble.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>2. Data We Collect</h2>
+          <h3>Website content</h3>
+          <p>
+            When you use ViewAble on a page, we process the text and structure of the
+            current web page (for example, article text and headings) so we can
+            simplify it, read it aloud, summarize it, and generate quiz questions.
+          </p>
+
+          <h3 style="margin-top: 10px;">Usage preferences and settings</h3>
+          <p>
+            We store your accessibility and reading preferences in your browser so
+            ViewAble can remember them across sessions, including:
+          </p>
+          <ul>
+            <li>Dyslexic font on/off</li>
+            <li>High‑contrast mode on/off</li>
+            <li>Text size and line spacing</li>
+            <li>Theme (light / dark / auto)</li>
+            <li>Voice gender preference and volume for text‑to‑speech</li>
+          </ul>
+
+          <h3 style="margin-top: 10px;">What we <em>do not</em> collect</h3>
+          <p>
+            We do not intentionally collect or store personally identifiable
+            information (such as your name or email), health information, financial
+            data, authentication information (passwords), personal communications, or
+            your full browsing history outside the active page you invoke the
+            Extension on.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>3. How We Use Your Data</h2>
+          <p>We use collected data only to provide and improve ViewAble’s features:</p>
+          <ul>
+            <li>To simplify and reformat pages into a clean, accessible reader view.</li>
+            <li>
+              To apply accessibility options such as dyslexic font, high contrast,
+              text size, and line spacing based on your saved preferences.
+            </li>
+            <li>
+              To read content aloud using Chrome’s text‑to‑speech (TTS) according to
+              your chosen voice and volume.
+            </li>
+            <li>
+              To generate summaries and quiz questions by sending relevant page text
+              to our AI provider and displaying the results back to you.
+            </li>
+          </ul>
+          <p style="margin-top: 6px;">
+            We do <strong>not</strong> use your data for advertising, marketing, or
+            user profiling.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>4. Data Storage and Retention</h2>
+          <p>
+            Your accessibility preferences and settings are stored locally in your
+            browser using Chrome’s storage APIs so the Extension can remember them
+            across sessions.
+          </p>
+          <p class="muted" style="margin-top: 6px;">
+            We do not maintain our own external database of user profiles or long‑term
+            logs of your browsing content. Text sent to the AI service is processed
+            for summaries and quizzes and may be subject to that provider’s own
+            retention policies.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>5. Data Sharing and Third Parties</h2>
+          <p>
+            We share limited data with third parties only when necessary to provide
+            core functionality:
+          </p>
+          <h3 style="margin-top: 6px;">AI provider (Groq)</h3>
+          <p>
+            When you request a summary or quiz, ViewAble sends relevant portions of
+            the current page’s text to Groq’s API to generate a summary or multiple‑choice
+            questions. The data sent is limited to what is needed to produce the
+            requested output.
+          </p>
+          <div class="tag-list">
+            <span class="tag">No data selling</span>
+            <span class="tag">No data broker sharing</span>
+            <span class="tag">No targeted advertising</span>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>6. Legal Basis and Children</h2>
+          <p>
+            ViewAble is intended for general audiences, including students and adults,
+            and is not specifically directed at children under 13. By using the
+            Extension, you consent to the data practices described here, to the extent
+            permitted by applicable law.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>7. Security</h2>
+          <p>
+            We use reasonable technical and organizational measures to help protect
+            data processed by the Extension, including HTTPS when communicating with
+            external services and limiting the data we send to what is needed for
+            accessibility features.
+          </p>
+          <p class="muted" style="margin-top: 6px;">
+            However, no method of transmission or storage is completely secure, and
+            we cannot guarantee absolute security.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>8. Your Choices</h2>
+          <ul>
+            <li>You can disable or uninstall the Extension at any time.</li>
+            <li>
+              You can adjust accessibility, voice, and volume settings in the popup
+              or options pages.
+            </li>
+            <li>
+              You can choose not to use features like “Summarize” or “Quiz” if you do
+              not want page text sent to the AI service.
+            </li>
+          </ul>
+          <div class="alert">
+            <span class="alert-icon">!</span>
+            <span>
+              If we materially change how data is used, we will update this page and,
+              where required, provide additional notice.
+            </span>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>9. Changes to This Policy</h2>
+          <p>
+            We may update this Privacy Policy from time to time to reflect changes in
+            ViewAble’s features, data practices, or legal requirements. When we do,
+            we will update the “Last updated” date at the top of this page and, where
+            required, provide additional notice or obtain consent.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>10. Contact</h2>
+          <p>
+            If you have any questions or concerns about this Privacy Policy or
+            ViewAble’s data practices, you can contact the developer at:
+          </p>
+          <p style="margin-top: 4px;">
+            <strong>Email:</strong>
+            <a href="mailto:your-email@example.com">your-email@example.com</a>
+          </p>
+          <p class="muted" style="margin-top: 4px; font-size: 12px;">
+            Replace this email address with your actual contact email before
+            publishing.
+          </p>
+        </section>
+      </section>
+
+      <footer class="footer">
+        <span>&copy; 2026 ViewAble. All rights reserved.</span>
+        <span>Built for accessible reading on the modern web.</span>
+      </footer>
+    </main>
+  </body>
+</html>
